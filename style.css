@@ -1,0 +1,221 @@
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #20476e;
+      color: white;
+      text-align: center;
+      padding: 3rem;
+      background-image:url(images/Banner.png);
+    }
+    .header h1 {
+      font-size: 3rem; /* Keep the title large */
+      font-weight: bold;
+      color: #3498db; /* Slightly more vibrant blue */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Retain the shadow for emphasis */
+    }
+    .hero-img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .content {
+      text-align: center;
+      margin: 2rem auto;
+      font-family: 'Arial', sans-serif;
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.6;
+      padding: 1rem 0;
+    }
+    .content p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #20476e; /* Match the header color */
+      margin-bottom: 1rem;
+    }
+    .content ul li {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+      font-style: italic; /* Add emphasis */
+    }
+    .content ul li::before {
+      content: "✔️"; /* Add a checkmark icon */
+      color: #4caf50; /* Green color for the icon */
+      margin-right: 0.5rem; /* Space between icon and text */
+    }
+    .content p:first-of-type {
+      font-size: 1.6rem;
+      color: #0056b3; /* Updated to a deeper shade of blue */
+      font-weight: bold;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .service {
+      width: 150px;
+      text-align: center;
+      /* border: px solid gray; */
+    }
+    .service img {
+      width: 120%;
+      aspect-ratio: 1/1; /* Maintain a square aspect ratio */
+      border-radius: 50%;
+      object-fit: cover;
+      opacity: 1;
+      transition: transform 0.3s ease-in-out;
+      margin-left: -10%;
+      margin-right: -10%;
+      position: relative;
+    }
+    .service img:hover {
+      transform: scale(1.1);
+    }
+    .service p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #333;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 5rem;
+      font-size: 25px;
+      background: #e0e3e7; /* Darker gray background for more contrast */
+      padding: 2rem 0 3rem 0;
+      border-radius: 0.5rem; /* Rectangle with slightly rounded corners */
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 16px rgba(30, 136, 229, 0.08);
+    }
+
+    .cta p {
+      color: #222;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .cta .btn {
+      background-color: #1e88e5;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      padding: 1rem 2.5rem;
+      margin-top: 1rem;
+      box-shadow: 0 2px 8px rgba(21, 101, 192, 0.10);
+      transition: background 0.3s, color 0.3s;
+      display: inline-block;
+      border: none;
+    }
+
+    .cta .btn:hover {
+      background-color: #ff5722;
+      color: white !important;
+    }
+ 
+    
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #20476e;
+      color: white;
+      margin-top: 2rem; /* Add more spacing above the footer */
+    }
+    
+    a {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #1e88e5;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      display: block;
+    }
+
+    a:hover {
+      color: #ff5722;
+      text-decoration: underline;
+    }
+
+    .text {text-align: center;}
+
+    .service a {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #0056b3; /* Ensure all service links, including 'Batterij vervangen', have the same blue color */
+      text-align: center;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      display: block;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .service a:hover {
+      color: #1e88e5; /* Slightly lighter blue for hover effect */
+      text-decoration: underline;
+    }
+
+    .services .service a:hover + img {
+      transform: scale(1.1); /* Enlarge the image slightly */
+      transition: transform 0.3s ease-in-out; /* Smooth animation */
+    }
+
+    .navbar {
+      background-color: #20476e;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #ff5722;
+      transform: scale(1.1); /* Slightly enlarge the link on hover */
+    }
+
+    .service-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .services .service:hover img {
+      transform: scale(1.1); /* Enlarge the image slightly */
+      transition: transform 0.3s ease-in-out; /* Smooth animation */
+    }
+
+    .service a[href="batterij.html"] {
+      color: #0056b3; /* Match the deeper shade of blue */
+    }
+
